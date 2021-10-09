@@ -1,0 +1,6 @@
+#menu-sidebar {
+  height: 100vh;
+  background-color: red;
+  max-width: 60px;
+  flex: 0.2;
+}

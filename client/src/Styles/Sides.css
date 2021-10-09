@@ -1,0 +1,11 @@
+#left-side-bar {
+  /* position: absolute; */
+  width: 49vw;
+  height: 100vh;
+  background-color: pink;
+}
+#right-side-bar {
+  width: 49vw;
+  height: 100vh;
+  background-color: rgb(187, 66, 86);
+}
