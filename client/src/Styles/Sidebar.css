@@ -1,6 +1,28 @@
 #menu-sidebar {
+  position: fixed;
   height: 100vh;
-  background-color: red;
-  max-width: 60px;
+  background-color: #1a1a1d;
+  width: 60px;
+  min-width: 60px;
   flex: 0.2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  border-left: solid #4e4e50 1px;
+  top: 0px;
+  right: 0px;
+}
+/* 187, 66, 86 */
+/* 26, 26, 26 */
+#sidebar-icon {
+  transition: 0.1s;
+  width: 43px;
+  cursor: pointer;
+  margin: 5px;
+}
+#sidebar-icon:hover {
+  transition: 0.1s;
+  filter: drop-shadow(0px 0px 2px #950740);
 }

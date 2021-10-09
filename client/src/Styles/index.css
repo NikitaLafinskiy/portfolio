@@ -2,8 +2,20 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Noto Sans Display", sans-serif;
+  overflow-x: hidden;
 }
 #main-wrapper {
   display: flex;
   flex-direction: row;
+}
+::-webkit-scrollbar {
+  background-color: rgb(31, 31, 31);
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(83, 83, 83);
+}
+::selection {
+  background-color: #c3073f;
+  color: black;
 }

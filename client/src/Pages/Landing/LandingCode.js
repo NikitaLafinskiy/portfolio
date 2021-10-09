@@ -3,8 +3,8 @@ import "../../Styles/Landing/Landing.css";
 
 export default function LandingProfile() {
   return (
-    <div id='profile'>
-      <div id='profile-heading'>Nikita Lafinskiy</div>
+    <div style={{ color: "white" }} id='profile'>
+      gay
     </div>
   );
 }
