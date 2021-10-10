@@ -5,6 +5,7 @@ import Sidebar from "../../Components/Sidebar";
 import LandingProfile from "./LandingProfile";
 import "../../Styles/Landing/Landing.css";
 import Main from "../../Components/Main";
+import LandingCode from "./LandingCode";
 
 const Landing = () => {
   return (
@@ -12,7 +13,9 @@ const Landing = () => {
       <Left>
         <LandingProfile />
       </Left>
-      <Right>ass</Right>
+      <Right>
+        <LandingCode />
+      </Right>
     </Main>
   );
 };

@@ -41,3 +41,19 @@
   width: 100%;
   height: 100%;
 }
+.punctuation {
+  color: rgb(243, 168, 93);
+}
+.keyword {
+  color: rgb(60, 93, 140);
+  font-weight: bold;
+}
+.string {
+  color: rgb(177, 148, 184);
+}
+.variable {
+  color: rgb(224, 224, 224);
+}
+.number {
+  color: chartreuse;
+}
