@@ -57,3 +57,12 @@
 .number {
   color: chartreuse;
 }
+.component {
+  color: rgb(163, 155, 71);
+}
+.comment {
+  color: #606061;
+}
+.method {
+  color: #bb033a;
+}

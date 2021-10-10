@@ -9,5 +9,6 @@
   width: 48.5vw;
   height: 100vh;
   background-color: #222225;
+  overflow: scroll;
   /* border-left: 1px solid white; */
 }
