@@ -28,7 +28,6 @@ const Projects = () => {
     console.log(rounded);
     return rounded;
   };
-  round('PROEECTS');
 
   return (
     <div id='projects-wrapper'>
