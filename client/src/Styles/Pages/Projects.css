@@ -6,15 +6,26 @@
   box-sizing: border-box;
 }
 #projects-header {
+  font-family: 'GFS Didot', serif;
   position: relative;
   margin: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.2s;
+  /* transition: 0.2s; */
   width: calc(100vw - 60px);
   height: 100vh;
 }
+#header-wrapper {
+  width: 30vw;
+  height: 40vw;
+  /* display: flex; */
+  transform: rotate(303deg);
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
 /* }
 #projects-header span {
   position: relative;

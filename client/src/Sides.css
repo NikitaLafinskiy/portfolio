@@ -10,5 +10,7 @@
   height: 100vh;
   background-color: #222225;
   overflow: scroll;
+  display: flex;
+  flex-direction: column;
   /* border-left: 1px solid white; */
 }

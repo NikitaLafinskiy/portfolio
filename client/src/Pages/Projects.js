@@ -1,25 +1,26 @@
 import React from 'react';
 import '../Styles/Pages/Projects.css';
-import img from '../layered-waves-projects.svg';
+import img from '../background-curves/layered-waves-projects.svg';
 
 const Projects = () => {
   const round = (word) => {
     const splitWord = word.split('');
     const rounded = splitWord.map((obj, i) => {
-      const num = (i + 1) * 12;
+      const num = obj === 'J' ? (i + 1) * 14 : (i + 1) * 13;
       console.log(`rotate(${num}deg)`);
       return (
         <span
           key={i}
           style={{
             transform: `rotate(${num}deg)`,
-            color: 'white',
+            color: 'rgba(255, 255, 255, 0.225)',
             display: 'block',
             transformOrigin: 'bottom center',
             position: 'absolute',
             width: 2 + 'vw',
-            height: '70vh',
-            fontSize: 10 + 'vw',
+            // height: "500px",
+            height: '30vw',
+            fontSize: 5 + 'vw',
           }}>
           {obj}
         </span>
@@ -36,19 +37,7 @@ const Projects = () => {
         {/* <span style={{ color: 'white', transform: 'rotate(6deg)' }}>
           Projects
         </span> */}
-        <div
-          style={{
-            transform: 'rotate(306deg)',
-            borderRadius: '50%',
-            width: 0 + 'vw',
-            position: 'absolute',
-            // top: '50%',
-            // left: '50%',
-            // top: 'calc(-50% - 100vh)',
-            left: 0 + '%',
-          }}>
-          {round('PROJECTS')}
-        </div>
+        <div id='header-wrapper'>{round('PROJECTS')}</div>
       </div>
     </div>
   );
