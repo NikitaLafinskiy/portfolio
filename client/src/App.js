@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Route exact path='/' component={Landing} />
-      <Route exact path='/projects' component={Projects} />
+      <Route exact path='/projects/:num' component={Projects} />
       <Route exact path='/info' component={Info} />
       <div style={{ width: '60px' }}></div>
       <Sidebar />

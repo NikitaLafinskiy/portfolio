@@ -8,7 +8,7 @@ export default function Left(props) {
       <Link to='/'>
         <img id='sidebar-icon' src='/images/home.png' alt='Home' />
       </Link>
-      <Link to='/projects'>
+      <Link to='/projects/0'>
         <img id='sidebar-icon' src='/images/projects.png' alt='Projects' />
       </Link>
       <Link to='/info'>
