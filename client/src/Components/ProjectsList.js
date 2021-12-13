@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../Styles/Pages/Projects.css';
+import { Link, useHistory } from 'react-router-dom';
 
 const gsap = window.gsap;
 export default function ProjectsList({ projects, num }) {
+  const { go, push } = useHistory();
   let listRef = useRef(null);
   useEffect(() => {
     console.log(listRef);
@@ -28,13 +30,35 @@ export default function ProjectsList({ projects, num }) {
     );
   });
 
+  const nextNum = projects[parseInt(num) + 2] ? parseInt(num) + 1 : 0;
+  const prevNum = projects[parseInt(num) - 1]
+    ? parseInt(num) + -1
+    : projects.length / 2;
+  const handleUpdate = () => {
+    push(`/projects/${prevNum}`);
+  };
   return (
     <div
       ref={(el) => {
         listRef = el;
       }}
       id='projectsWrapper'>
+      <Link onClick={handleUpdate} to={`/projects/${prevNum}`}>
+        <a>
+          <img
+            className='arrow-projects'
+            id='leftArrow'
+            src='/images/arrow.png'
+            alt='previous'
+          />
+        </a>
+      </Link>
       {projectsArr}
+      <Link onClick={handleUpdate} to={`/projects/${nextNum}`}>
+        <a>
+          <img className='arrow-projects' src='/images/arrow.png' alt='next' />{' '}
+        </a>
+      </Link>
     </div>
   );
 }
